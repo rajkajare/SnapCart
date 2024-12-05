@@ -1,5 +1,32 @@
+
+
+/*=============================================
+=            Fonts and Typography            =
+=============================================*/
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.username-title{
+    font-size: 2.8rem;
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+.label-size{
+    font-size: 1.3rem;
+}
+/*=====  End of Fonts and Typography   ======*/
+
+
+
+/*=============================================
+=            General Styles            =
+=============================================*/
+
 *{
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
 }
@@ -8,8 +35,13 @@ html{
     font-size: 62.5%;
 }
 
-/* layout */
+/*=====  End of General Styles  ======*/
 
+
+
+/*=============================================
+=            Layout            =
+=============================================*/
 #login-page{
     width: 100%;
     height: 100vh;
@@ -17,10 +49,9 @@ html{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    /* background-image: url(/SnapCart/images/3460428_62620.jpg); */
-    background-size: cover;
-
 }
+
+
 .username-box, .password-box{
     display: flex;
     flex-direction: column;
@@ -29,6 +60,31 @@ html{
 
 }
 
+.login-page-box{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*=====  End of Layout  ======*/
+
+
+
+
+
+
+
+/*=============================================
+=            Styles and States and Pseudo-classes            =
+=============================================*/
 .username-input-box , .password-input-box{
     padding-left:1rem ;
     border-radius: .7rem;
@@ -39,15 +95,9 @@ html{
     outline:none;
     border: 1px solid grey;
 }
+
 .username-input-box:focus,.password-input-box:focus{
     box-shadow: rgba(239, 183, 15, 0.851) 0px 0.0625em 0.0625em, rgba(232, 170, 12, 0.827) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-.login-page-box{
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
 }
 
 .login-page-logo-box{
@@ -57,8 +107,7 @@ html{
     background-image: url(/SnapCart/images/logo-removebg-preview.png);
     background-position: 50% 50%;
     background-size: cover;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 
 .login-page-username-box{
@@ -76,24 +125,10 @@ html{
     padding-bottom: 1rem;
 }
 
-.username-title{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 2.8rem;
-    margin-top: 1rem;
-    padding-left: 2rem;
-}
-.form-box{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-/* 
-.username-input-box, .username-label, .password-input-box,.password-label{
-    display: block;
-} */
 .username-input-box, .password-input-box{
     height: 3.1rem;
 }
+
 
 .login-button{
     padding: 1rem;
@@ -104,12 +139,13 @@ html{
     -o-border-radius: .7rem;
     width: 100%;
     background-color: #FFD814;    
+    border: none;
 }
 .login-button:hover{
     background-color: #e1bf15;
 }
 .login-button:active{
-    border: 2px solid #FFD814;
+    outline: 2px solid #FFD814;
 }
 
 .submit-button-box{
@@ -132,16 +168,41 @@ html{
     -webkit-border-radius: .7rem;
     -moz-border-radius: .7rem;
     -ms-border-radius: .7rem;
-    -o-border-radius: .7rem;    
+    -o-border-radius: .7rem;  
+    border: none;  
 }
 .create-button-effect:hover{
     background-color: rgb(230, 230, 230);
 }
 .create-button-effect:active{
-    border: 2px solid white;
+    outline: 1px solid grey;
 }
+/*=====  End of Styles and States and Pseudo-classes  ======*/
 
-.label-size{
-    font-size: 1.3rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
+
+
+/*=============================================
+=            media Quiries            =
+=============================================*/
+
+
+
+/*=====  End of media Quiries  ======*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
