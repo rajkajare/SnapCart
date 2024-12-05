@@ -2,17 +2,38 @@
 <html>
     <head>
         <title>Login</title>
+        <link rel="stylesheet" href="Styles/login.css">
     </head>
 
     <body>
-        <p>This is login page</p>
-        <p>Username</p>
-        <input class="js-input-username" type="text">
-        <p>Password</p>
-        <input class="js-input-password" type="text">
-        <div>
-            <button class="js-submit-button">Submit</button>
+        <div id="login-page">
+            <div class="login-page-box">
+                <div class="login-page-logo-box"></div>
+                <div class="login-page-username-box">
+                    <h1 class="username-title">Sign in</h1>
+                    <form action="">
+                        <div class="form-box">
+                            <div class="username-box">
+                                <label for="username" class="username-label label-size">Email or mobile phone number</label>
+                                <input id="username" class="username-input-box" type="text">
+                            </div>
+                            <div class="password-box">
+                                <label for="password" class="password-label label-size">Password</label>
+                                <input id="password" type="text" class="password-input-box">
+                            </div>
+                            <div class="submit-button-box">
+                                <button type="submit" class="login-button button-layout">Continue</button>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+                <div class="create-button"><button class="create-button-effect">Create your SnapCart account</button></div>
+            </div>
         </div>
+
+
+        
         
 
         <script type="module" src="Scripts/login.js"></script>
